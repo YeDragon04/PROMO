@@ -10,6 +10,7 @@ html {
 }
 body {
 	min-height: 100%;
+	overflow-y: scroll;
 	margin: 0;
 	
 }
@@ -262,7 +263,6 @@ body {
 /*section4*/
 .conclusion {
 	border: red;
-	
 }
 
 .websiteDescription {
@@ -270,6 +270,7 @@ body {
 	text-align: center;
 	margin-top: 40%;
 	margin-bottom: 2%;
+	font-size: 1rem;
 }
 
 .getStarted {
@@ -277,8 +278,10 @@ body {
 	margin: auto;
 	border-radius: 1rem;
 	border: solid;
+	aspect-ratio: 1/0.30;
 	font-weight: 700;
-	
+	width: 5rem;
+	font-size: 1rem;
 }
 .aligner {
 	display: flex;
@@ -301,8 +304,8 @@ body {
 .design {
   margin: auto;
 	border: solid;
-	height: 20rem;
 	width: 80%;
+	aspect-ratio: 1/1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -312,6 +315,7 @@ body {
 
 .footer {
 	margin-top: 40%;
+	padding-bottom: 5%;
 	display: flex;
 	font-size: 12px;
 	align-items: center;
