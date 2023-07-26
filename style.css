@@ -26,14 +26,13 @@ body {
 	width:90%;
 	margin: auto;
 	border: solid;
-	display: block;
-	background: linear-gradient(0deg, rgba(0, 104, 55, 1) 0%, rgba(0, 104, 55, .48) 19%, rgba(0, 104, 55, .44) 64%, rgba(199, 178, 153, 0.18) 100%);
+	background: linear-gradient(0deg, rgba(99, 167, 126, 1) 0%, rgba(99, 167, 126, .48) 19%, rgba(99, 167, 126, .44) 64%, rgba(214, 210, 181, 0.18) 100%);
+	z-index: 2;
 }
 
 /*section1*/
 .header {
 	height: 5%;
-	border: solid red;
 	display: grid;
 	grid-template-columns:15% 85%;
 	grid-row: 10%;
@@ -42,14 +41,12 @@ body {
 }
 
 .logoContainer {
-  border: solid yellow;
   margin-top: 1%;
   margin: 5%;
   position: relative;
 }
 
 .logo {
-	border: solid blue;
 	aspect-ratio: 1/1;
 	width:75%;
 	position:absolute;
@@ -64,7 +61,6 @@ body {
 	margin-top: 1%;
 	justify-content: flex-end;
 	align-items: flex-start;
-	border: solid green;
 	margin-right: 5%;
 }
 
@@ -95,7 +91,6 @@ body {
 	padding: auto;
 	position: relative;
 	margin-bottom: 25%;
-	border: solid;
 	margin-bottom: 50%;
 }
 
@@ -104,7 +99,6 @@ body {
   aspect-ratio: 1/0.5;
   z-index: 0;
   position: absolute;
-  border: solid;
   padding: 0;
 } 
 
@@ -114,7 +108,6 @@ body {
 	aspect-ratio: 23/9;
 	position: relative;
 	z-index: 1;
-	border: solid;
 }
 
 .box1 {
@@ -202,8 +195,16 @@ body {
 }
 
 .introduction {
-	border: solid;
 	margin-top: 10%;
+}
+.introduction a {
+  text-decoration: none;
+}
+.introduction a:link {
+  color: black;
+}
+.introduction a:visited {
+  color: black;
 }
 
 /*section2*/
@@ -284,7 +285,6 @@ body {
 
 /*section4*/
 .conclusion {
-	border: solid;
 	width: 100%;
 	height: 10%;
 	margin-bottom: 30%;
@@ -338,7 +338,6 @@ body {
 }
 
 .footer {
-  border: solid;
 	margin-top: 80%;
 	margin-bottom: 5%;
 	display: flex;
