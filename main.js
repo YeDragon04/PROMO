@@ -26,21 +26,24 @@ let fontSize;
 
 function sizeResponsive() {
   let width = window.innerWidth;
-  let height = window.innerHeight;
+
   /*allSections*/
   console.log(width);
   fontSize = width / 9;
   fontSize = fontSize * 16;
   fontSize = fontSize / 16;
   fontSize = fontSize * 1.25;
-  section1.style.height = fontSize + "rem";
-  section2.style.height = fontSize + "rem";
-  section3.style.height = fontSize + "rem";
-  section4.style.height = fontSize + "rem";
+  section1.style.aspectRatio = 4 + "/" + .000001;
+  section2.style.aspectRatio = 1 + "/" + .75;
+  section4.style.aspectRatio = 1 + "/" + .75;
+  section3.style.aspectRatio = 1 + "/" + .75;
+
+
   /*section1*/
   fontSize = width * .05;
   fontSize = fontSize / 16;
   tagLine.style.fontSize = fontSize + "rem";
+
   /*header*/
   fontSize = width * .02;
   fontSize = fontSize / 16;
@@ -48,20 +51,25 @@ function sizeResponsive() {
   fontSize = width * .05;
   fontSize = fontSize / 16;
   menu.style.height = fontSize + "rem";
+
   /*tagline*/
   fontSize = width * .04;
   fontSize = fontSize / 16;
   tagLine.style.fontSize = fontSize + "rem";
+
   /*carousel*/
   fontSize = width * .87;
   fontSize = fontSize / 16;
   carouselSize.style.width = fontSize + "rem";
   carouselBackground.style.height = carouselSize.clientHeight / 16 + "rem";
+
   /*introduction*/
+
   /*websiteDescription*/
   fontSize = width * .03;
   fontSize = fontSize / 16;
   websiteDescription1.style.fontSize = fontSize + "rem";
+
   /*getStarted*/
   fontSize = width * .25;
   fontSize = fontSize / 16;
@@ -72,15 +80,19 @@ function sizeResponsive() {
   fontSize = width * .0375;
   fontSize = fontSize / 16;
   getStarted1.style.borderRadius = fontSize + "rem";
+
   /*aligner*/
   fontSize = width * .04;
   fontSize = fontSize / 16;
   aligner1.style.fontSize = fontSize + "rem";
+
   /*section2*/
+
   /*how*/
   fontSize = width * .075;
   fontSize = fontSize / 16;
   how.style.fontSize = fontSize + "rem";
+
   /*graphicDesign*/
   fontSize = width * .075;
   fontSize = fontSize / 16;
@@ -88,25 +100,33 @@ function sizeResponsive() {
   fontSize = width * .7;
   fontSize = fontSize / 16;
   graphicDesign.style.width = fontSize + "rem";
+
   /*section3*/
+
   /*description*/
   fontSize = width * .03;
   fontSize = fontSize / 16;
   description.style.fontSize = fontSize + "rem";
+
   /*numberList*/
   fontSize = width * .04;
   fontSize = fontSize / 16;
   numberList.style.fontSize = fontSize + "rem";
+
   /*winnerList*/
   fontSize = width * .04;
   fontSize = fontSize / 16;
   winnerList.style.fontSize = fontSize + "rem";
+
   /*section4*/
+
   /*conclusion*/
+
   /*websiteDescription*/
   fontSize = width * .03;
   fontSize = fontSize / 16;
   websiteDescription2.style.fontSize = fontSize + "rem";
+
   /*getStarted*/
   fontSize = width * .25;
   fontSize = fontSize / 16;
@@ -117,10 +137,12 @@ function sizeResponsive() {
   fontSize = width * .0375;
   fontSize = fontSize / 16;
   getStarted2.style.borderRadius = fontSize + "rem";
+
   /*aligner*/
   fontSize = width * .04;
   fontSize = fontSize / 16;
   aligner2.style.fontSize = fontSize + "rem";
+
   /*footer*/
   fontSize = width * .02;
   fontSize = fontSize / 16;
