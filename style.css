@@ -3,16 +3,15 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-html {
-	overflow: hidden;
-}
 
 html::-webkit-scrollbar {
 	display: none;
+	scrollbar-width: none;
 }
 
 body {
 	background: linear-gradient(0deg, rgba(0, 104, 55, 1) 0%, rgba(0, 104, 55, .48) 19%, rgba(0, 104, 55, .44) 64%, rgba(199, 178, 153, 0.18) 100%);
+	scrollbar-width: none;
 }
 
 
@@ -21,8 +20,11 @@ body {
 .section2,
 .section3,
 .section4 {
+	position: relative;
 	width: 100%;
+	height: 100vh;
 	border: solid blue;
+	overflow-y: visible;
 }
 
 .innerSection {
@@ -33,16 +35,24 @@ body {
 
 /*section1*/
 .header {
+	width: 100%;
+	height: 10vh;
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	justify-content: space-around;
-	margin-top: 2%;
-	margin-bottom: 10%;
+	margin-bottom: 10vh;
 }
 
 .logoContainer {
-	width: 8%;
+	background: url(pexels-magda-ehlers-1337380.jpg);
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 7vw;
+	border: solid;
+	height: 8vh;
 	aspect-ratio: 1/1;
-
 }
 
 .logo {
@@ -51,17 +61,17 @@ body {
 	background-color: white;
 }
 
-.menu {
+.menu {	
 	display: flex;
-	width: 80%;
-	font-size: 0.5rem;
-	margin-top: 1%;
-	justify-content: center;
+	height: 10vh;
+	width: 75vw;
+	font-size: clamp(14px,50%,800px);
+	justify-content: space-around;
 	align-items: center;
 }
 
 .menu p {
-	margin: 0 1% 0 1%;
+	font-size: 4vh;
 }
 
 .menu a {
@@ -76,32 +86,39 @@ body {
 	color: black;
 }
 
+.menu a:hover {
+	text-decoration: underline
+}
+
 .tagLine {
 	text-align: center;
-	margin-bottom: 10%;
-	font-size: 1rem;
+	font-size: 3vh;
+}
+
+.section1Container {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
 }
 
 /*carousel*/
 .carouselBackground {
-	width: 100%;
+	margin-top: 10vh;
+	width: 80vh;
 	position: relative;
-	margin: auto;
-	margin-top: 10%;
-}
-
-.background {
-	width: 90%;
-	aspect-ratio: 1/0.5;
-	z-index: 0;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	top: 70%;
-	position: absolute;
+	background-image: url(20230715_175446.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: solid;
 }
 
 .carousel {
-	width: 10%;
+	border: solid;
+	width: 100%;
 	aspect-ratio: 23/9;
 	position: relative;
 	top: -1.5%;
@@ -114,7 +131,7 @@ body {
 	top: 29.5%;
 	left: 5%;
 	width: 15%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1.5/1;
 	background-color: red;
 	z-index: 1;
 	transition: width 1s, top 1s, left 1s, border-radius 1s;
@@ -126,7 +143,7 @@ body {
 	top: 23%;
 	left: 12.5%;
 	width: 20%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1.5/1;
 	background-color: orange;
 	z-index: 3;
 	transition: width 1s, top 1s, left 1s, border-radius 1s;
@@ -138,7 +155,7 @@ body {
 	top: 16.5%;
 	left: 22.5%;
 	width: 25%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1.5/1;
 	background-color: yellow;
 	z-index: 4;
 	transition: width 1s, top 1s, left 1s, border-radius 1s;
@@ -150,7 +167,7 @@ body {
 	top: 10%;
 	left: 35%;
 	width: 30%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1.5/1;
 	background-color: green;
 	z-index: 5;
 	transition: width 1s, top 1s, left 1s, border-radius 1s;
@@ -162,7 +179,7 @@ body {
 	top: 16.5%;
 	left: 52.5%;
 	width: 25%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1.5/1;
 	background-color: blue;
 	z-index: 4;
 	transition: width 1s, top 1s, left 1s, border-radius 1s;
@@ -174,7 +191,7 @@ body {
 	top: 23%;
 	left: 67.5%;
 	width: 20%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1.5/1;
 	background-color: indigo;
 	z-index: 3;
 	transition: width 1s, top 1s, left 1s, border-radius 1s;
@@ -186,16 +203,21 @@ body {
 	top: 29.5%;
 	left: 80%;
 	width: 15%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1.5/1;
 	background-color: violet;
 	z-index: 2;
 	transition: width 1s, top 1s, left 1s, border-radius 1s;
 	border-radius: 25%;
 }
-
 .introduction {
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+	width: 50vh;
+	font-size: 5vh;
 }
 
 .introduction a {
@@ -212,22 +234,23 @@ body {
 
 /*section2*/
 .how {
+	font-size: 5vh;
 	margin-left: 5%;
-	font-size: 2em;
 }
 
 .graphicDesign {
-	width: 80%;
+	
+	width: 70vw;
+	height: 80vh;
 	border: solid;
 	display: flex;
 	justify-content: center;
 	margin: auto;
-	margin-bottom: 10%;
+	margin-top: 5vh;
 	align-items: center;
 	font-weight: 700;
 	font-size: 2em;
 	background-color: white;
-	aspect-ratio: 1/1.5;
 }
 
 /*section3*/
@@ -279,32 +302,63 @@ body {
 }
 
 /*section4*/
-.conclusion {
+.section4OuterContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
-	margin-bottom: 30%;
-	margin-top: 30%;
+	height: 100%;
+}
+
+.section4container {
+	display: flex;
+	flex-wrap: wrap;
+	overflow-wrap: normal;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+}
+
+.conclusion {
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 10px;
+	align-self: center;
+	height: 20vh;
+	width: 50vh;
+	font-size: 5vh;
 }
 
 .websiteDescription {
 	text-align: center;
 	margin-bottom: 2%;
-	font-size: 1rem;
+	font-size: clamp(1vh, 50%, 5vh);
 }
 
 .getStarted {
 	display: block;
-	margin: auto;
 	border-radius: 1rem;
 	border: solid;
 	aspect-ratio: 1/0.30;
 	font-weight: 700;
-	width: 5rem;
+	width: 8rem;
 	font-size: 1rem;
+}
+
+.getStarted:hover {
+	background-color: black;
+	color: white;
 }
 
 .aligner {
 	text-align: center;
 	margin-top: 1%;
+	font-size: 4vh;
 }
 
 .conclusion a:link {
@@ -317,26 +371,25 @@ body {
 }
 
 .conclusion a:hover {
-	color: gray;
+	color: white;
+	text-decoration: underline;
 }
 
 .design {
-	margin: auto;
-	border: solid;
-	width: 80%;
-	aspect-ratio: 1/1;
+	margin-top: 5vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 	50vh;
+	border: solid;
+	aspect-ratio: 1/1;
 	background-color: white;
-	font-size: 2rem;
 }
 
 .footer {
-	margin-top: 40%;
-	margin-bottom: 5%;
+	width: 100%;
 	display: flex;
-	font-size: 12px;
+	font-size: 1.3vh;
 	align-items: center;
 	justify-content: center;
 }

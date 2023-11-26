@@ -21,133 +21,133 @@ const section2 = document.getElementById("section2");
 const section3 = document.getElementById("section3");
 const section4 = document.getElementById("section4");
 
-const fontTimer = setInterval(sizeResponsive, 10);
-let fontSize;
+// const fontTimer = setInterval(sizeResponsive, 10);
+// let fontSize;
 
-function sizeResponsive() {
-  let width = window.innerWidth;
+// function sizeResponsive() {
+//   let width = window.innerWidth;
 
-  /*allSections*/
-  console.log(width);
-  fontSize = width / 9;
-  fontSize = fontSize * 16;
-  fontSize = fontSize / 16;
-  fontSize = fontSize * 1.25;
-  section1.style.aspectRatio = 4 + "/" + .000001;
-  section2.style.aspectRatio = 1 + "/" + .75;
-  section4.style.aspectRatio = 1 + "/" + .75;
-  section3.style.aspectRatio = 1 + "/" + .75;
+//   /*allSections*/
+//   console.log(width);
+//   fontSize = width / 9;
+//   fontSize = fontSize * 16;
+//   fontSize = fontSize / 16;
+//   fontSize = fontSize * 1.25;
+//   section1.style.aspectRatio = 4 + "/" + .000001;
+//   section2.style.aspectRatio = 1 + "/" + .75;
+//   section4.style.aspectRatio = 1 + "/" + .75;
+//   section3.style.aspectRatio = 1 + "/" + .75;
 
 
-  /*section1*/
-  fontSize = width * .05;
-  fontSize = fontSize / 16;
-  tagLine.style.fontSize = fontSize + "rem";
+//   /*section1*/
+//   fontSize = width * .05;
+//   fontSize = fontSize / 16;
+//   tagLine.style.fontSize = fontSize + "rem";
 
-  /*header*/
-  fontSize = width * .02;
-  fontSize = fontSize / 16;
-  menu.style.fontSize = fontSize + "rem";
-  fontSize = width * .05;
-  fontSize = fontSize / 16;
-  menu.style.height = fontSize + "rem";
+//   /*header*/
+//   fontSize = width * .02;
+//   fontSize = fontSize / 16;
+//   menu.style.fontSize = fontSize + "rem";
+//   fontSize = width * .05;
+//   fontSize = fontSize / 16;
+//   menu.style.height = fontSize + "rem";
 
-  /*tagline*/
-  fontSize = width * .04;
-  fontSize = fontSize / 16;
-  tagLine.style.fontSize = fontSize + "rem";
+//   /*tagline*/
+//   fontSize = width * .04;
+//   fontSize = fontSize / 16;
+//   tagLine.style.fontSize = fontSize + "rem";
 
-  /*carousel*/
-  fontSize = width * .87;
-  fontSize = fontSize / 16;
-  carouselSize.style.width = fontSize + "rem";
-  carouselBackground.style.height = carouselSize.clientHeight / 16 + "rem";
+//   /*carousel*/
+//   fontSize = width * .87;
+//   fontSize = fontSize / 16;
+//   carouselSize.style.width = fontSize + "rem";
+//   carouselBackground.style.height = carouselSize.clientHeight / 16 + "rem";
 
-  /*introduction*/
+//   /*introduction*/
 
-  /*websiteDescription*/
-  fontSize = width * .03;
-  fontSize = fontSize / 16;
-  websiteDescription1.style.fontSize = fontSize + "rem";
+//   /*websiteDescription*/
+//   fontSize = width * .03;
+//   fontSize = fontSize / 16;
+//   websiteDescription1.style.fontSize = fontSize + "rem";
 
-  /*getStarted*/
-  fontSize = width * .25;
-  fontSize = fontSize / 16;
-  getStarted1.style.width = fontSize + "rem";
-  fontSize = width * .03;
-  fontSize = fontSize / 16;
-  getStarted1.style.fontSize = fontSize + "rem";
-  fontSize = width * .0375;
-  fontSize = fontSize / 16;
-  getStarted1.style.borderRadius = fontSize + "rem";
+//   /*getStarted*/
+//   fontSize = width * .25;
+//   fontSize = fontSize / 16;
+//   getStarted1.style.width = fontSize + "rem";
+//   fontSize = width * .03;
+//   fontSize = fontSize / 16;
+//   getStarted1.style.fontSize = fontSize + "rem";
+//   fontSize = width * .0375;
+//   fontSize = fontSize / 16;
+//   getStarted1.style.borderRadius = fontSize + "rem";
 
-  /*aligner*/
-  fontSize = width * .04;
-  fontSize = fontSize / 16;
-  aligner1.style.fontSize = fontSize + "rem";
+//   /*aligner*/
+//   fontSize = width * .04;
+//   fontSize = fontSize / 16;
+//   aligner1.style.fontSize = fontSize + "rem";
 
-  /*section2*/
+//   /*section2*/
 
-  /*how*/
-  fontSize = width * .075;
-  fontSize = fontSize / 16;
-  how.style.fontSize = fontSize + "rem";
+//   /*how*/
+//   fontSize = width * .075;
+//   fontSize = fontSize / 16;
+//   how.style.fontSize = fontSize + "rem";
 
-  /*graphicDesign*/
-  fontSize = width * .075;
-  fontSize = fontSize / 16;
-  graphicDesign.style.fontSize = fontSize + "rem";
-  fontSize = width * .7;
-  fontSize = fontSize / 16;
-  graphicDesign.style.width = fontSize + "rem";
+//   /*graphicDesign*/
+//   fontSize = width * .075;
+//   fontSize = fontSize / 16;
+//   graphicDesign.style.fontSize = fontSize + "rem";
+//   fontSize = width * .7;
+//   fontSize = fontSize / 16;
+//   graphicDesign.style.width = fontSize + "rem";
 
-  /*section3*/
+//   /*section3*/
 
-  /*description*/
-  fontSize = width * .03;
-  fontSize = fontSize / 16;
-  description.style.fontSize = fontSize + "rem";
+//   /*description*/
+//   fontSize = width * .03;
+//   fontSize = fontSize / 16;
+//   description.style.fontSize = fontSize + "rem";
 
-  /*numberList*/
-  fontSize = width * .04;
-  fontSize = fontSize / 16;
-  numberList.style.fontSize = fontSize + "rem";
+//   /*numberList*/
+//   fontSize = width * .04;
+//   fontSize = fontSize / 16;
+//   numberList.style.fontSize = fontSize + "rem";
 
-  /*winnerList*/
-  fontSize = width * .04;
-  fontSize = fontSize / 16;
-  winnerList.style.fontSize = fontSize + "rem";
+//   /*winnerList*/
+//   fontSize = width * .04;
+//   fontSize = fontSize / 16;
+//   winnerList.style.fontSize = fontSize + "rem";
 
-  /*section4*/
+//   /*section4*/
 
-  /*conclusion*/
+//   /*conclusion*/
 
-  /*websiteDescription*/
-  fontSize = width * .03;
-  fontSize = fontSize / 16;
-  websiteDescription2.style.fontSize = fontSize + "rem";
+//   /*websiteDescription*/
+//   fontSize = width * .03;
+//   fontSize = fontSize / 16;
+//   websiteDescription2.style.fontSize = fontSize + "rem";
 
-  /*getStarted*/
-  fontSize = width * .25;
-  fontSize = fontSize / 16;
-  getStarted2.style.width = fontSize + "rem";
-  fontSize = width * .03;
-  fontSize = fontSize / 16;
-  getStarted2.style.fontSize = fontSize + "rem";
-  fontSize = width * .0375;
-  fontSize = fontSize / 16;
-  getStarted2.style.borderRadius = fontSize + "rem";
+//   /*getStarted*/
+//   fontSize = width * .25;
+//   fontSize = fontSize / 16;
+//   getStarted2.style.width = fontSize + "rem";
+//   fontSize = width * .03;
+//   fontSize = fontSize / 16;
+//   getStarted2.style.fontSize = fontSize + "rem";
+//   fontSize = width * .0375;
+//   fontSize = fontSize / 16;
+//   getStarted2.style.borderRadius = fontSize + "rem";
 
-  /*aligner*/
-  fontSize = width * .04;
-  fontSize = fontSize / 16;
-  aligner2.style.fontSize = fontSize + "rem";
+//   /*aligner*/
+//   fontSize = width * .04;
+//   fontSize = fontSize / 16;
+//   aligner2.style.fontSize = fontSize + "rem";
 
-  /*footer*/
-  fontSize = width * .02;
-  fontSize = fontSize / 16;
-  footer.style.fontSize = fontSize + "rem";
-}
+//   /*footer*/
+//   fontSize = width * .02;
+//   fontSize = fontSize / 16;
+//   footer.style.fontSize = fontSize + "rem";
+// }
 
 /*The reason the carousel is moving*/
 const timer = setInterval(carousel, 2000);
@@ -161,115 +161,140 @@ let box5 = document.getElementById("box5");
 let box6 = document.getElementById("box6");
 let box7 = document.getElementById("box7");
 
+
+
+
+
 function carousel() {
   if (phase == 1) {
     box1.style.width = "20%";
     box1.style.left = "12.5%";
-    box1.style.top = "23%";
+    box1.style.top = "34%";
     box1.style.borderRadius = "20%";
     box1.style.zIndex = "3";
+
     box2.style.width = "25%";
     box2.style.left = "22.5%";
-    box2.style.top = "16.5%";
+    box2.style.top = "30%";
     box2.style.borderRadius = "15%";
     box2.style.zIndex = "4";
+
     box3.style.width = "30%";
     box3.style.left = "35%";
-    box3.style.top = "10%";
+    box3.style.top = "17.5%";
     box3.style.borderRadius = "10%";
     box3.style.zIndex = "5";
+
     box4.style.width = "25%";
     box4.style.left = "52.5%";
-    box4.style.top = "16.5%";
+    box4.style.top = "25%";
     box4.style.borderRadius = "15%";
     box4.style.zIndex = "4";
+
     box5.style.width = "20%";
     box5.style.left = "67.5%";
-    box5.style.top = "23%";
+    box5.style.top = "30.5%";
     box5.style.borderRadius = "20%";
     box5.style.zIndex = "3";
+
     box6.style.width = "15%";
     box6.style.left = "80%";
-    box6.style.top = "29.5%";
+    box6.style.top = "37%";
     box6.style.borderRadius = "25%";
     box6.style.zIndex = "2";
+
     box7.style.width = "15%";
     box7.style.left = "5%";
-    box7.style.top = "29.5%";
+    box7.style.top = "37%";
     box7.style.borderRadius = "25%";
     box7.style.zIndex = "1";
+
   } else if (phase == 2) {
     box1.style.width = "25%";
     box1.style.left = "22.5%";
-    box1.style.top = "16.5%";
+    box1.style.top = "25%";
     box1.style.borderRadius = "15%";
     box1.style.zIndex = "4";
+
     box2.style.width = "30%";
     box2.style.left = "35%";
-    box2.style.top = "10%";
+    box2.style.top = "17.5%";
     box2.style.borderRadius = "10%";
     box2.style.zIndex = "5";
+
     box3.style.width = "25%";
     box3.style.left = "52.5%";
-    box3.style.top = "16.5%";
+    box3.style.top = "25%";
     box3.style.borderRadius = "15%";
     box3.style.zIndex = "4";
+
     box4.style.width = "20%";
     box4.style.left = "67.5%";
-    box4.style.top = "23%";
+    box4.style.top = "30.5%";
     box4.style.borderRadius = "20%";
     box4.style.zIndex = "3";
+
     box5.style.width = "15%";
     box5.style.left = "80%";
-    box5.style.top = "29.5%";
+    box5.style.top = "37%";
     box5.style.borderRadius = "25%";
     box5.style.zIndex = "2";
+
     box6.style.width = "15%";
     box6.style.left = "5%";
-    box6.style.top = "29.5%";
+    box6.style.top = "37%";
     box6.style.borderRadius = "25%";
     box6.style.zIndex = "1";
+
     box7.style.width = "20%";
     box7.style.left = "12.5%";
-    box7.style.top = "23%";
+    box7.style.top = "30.5%";
     box7.style.borderRadius = "20%";
     box7.style.zIndex = "3";
+
   } else if (phase == 3) {
     box1.style.width = "30%";
     box1.style.left = "35%";
-    box1.style.top = "10%";
+    box1.style.top = "17.5%";
     box1.style.borderRadius = "10%";
     box1.style.zIndex = "5";
+
     box2.style.width = "25%";
     box2.style.left = "52.5%";
-    box2.style.top = "16.5%";
+    box2.style.top = "25%";
     box2.style.borderRadius = "15%";
     box2.style.zIndex = "4";
+
     box3.style.width = "20%";
     box3.style.left = "67.5%";
-    box3.style.top = "23%";
+    box3.style.top = "30.5%";
     box3.style.borderRadius = "20%";
     box3.style.zIndex = "3";
+
     box4.style.width = "15%";
     box4.style.left = "80%";
-    box4.style.top = "29.5%";
+    box4.style.top = "37%";
     box4.style.borderRadius = "25%";
     box4.style.zIndex = "2";
+
     box5.style.width = "15%";
     box5.style.left = "5%";
-    box5.style.top = "29.5%";
+    box5.style.top = "37%";
     box5.style.borderRadius = "25%";
     box5.style.zIndex = "1";
+
     box6.style.width = "20%";
     box6.style.left = "12.5%";
-    box6.style.top = "23%";
+    box6.style.top = "30.5%";
     box6.style.borderRadius = "20%";
     box6.style.zIndex = "3";
+
     box7.style.width = "25%";
     box7.style.left = "22.5%";
-    box7.style.top = "16.5%";
+    box7.style.top = "25%";
     box7.style.borderRadius = "15%";
     box7.style.zIndex = "4";
+
   } else if (phase == 4) {
     box1.style.width = "25%";
     box1.style.left = "52.5%";

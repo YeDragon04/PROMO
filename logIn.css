@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 104, 55, 1) 0%, rgba(0, 104, 55, .48) 19%, rgba(0, 104, 55, .44) 64%, rgba(199, 178, 153, 0.18) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+}
+
+.back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    font-size: 2vh;
+    width: 4vh;
+    aspect-ratio: 1;
+    transform: translate(-200%, 100%);
+    left: 100%;
+}
+
+.main_container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 2rem;
+}
+
+.sign_Up_Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid;
+    width: 100%;
+    height: 100%;
+
+}
+
+.Sign_Up {
+    border: solid;
+    height: 60vh;
+    width: 60vh;
+}
+
+.Sign_Up h1 {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.Sign_Up label {
+    margin-top: 4vw;
+    display: block;
+    font-size: 3vh;
+}
+
+.input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 5vh;
+}
+
+.buttonContainer {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    font-size: 3vh;
+    width: 10vw;
+}
+
+.Log_In {
+    border: solid;
+    height: 60vh;
+    width: 60vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .sign_Up_Container {
+        flex-wrap: wrap;
+    }
+
+    .Sign_Up {
+        height: 30vh;
+    }
+
+    .Log_In {
+        height: 30vh;
+    }
+
+    .Sign_Up h1 {
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    .Sign_Up label {
+        margin-top: 8%;
+        display: block;
+        font-size: 2vh;
+    }
+
+    .input {
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 3vh;
+    }
+
+    .buttonContainer {
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .button {
+        font-size: 2vh;
+        width: 20%;
+    }
+}
