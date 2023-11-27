@@ -1,25 +1,25 @@
-const getStarted2 = document.getElementById("getStarted2");
-const websiteDescription2 = document.getElementById("websiteDescription2");
-const aligner2 = document.getElementById("aligner2");
-const footer = document.getElementById('footer');
-const numberList = document.getElementById("winningNumbers");
-const winnerList = document.getElementById("winners");
-const description = document.getElementById("description");
-const carouselSize = document.getElementById("carousel");
-const carouselBackground = document.getElementById("carouselBackground");
-const menu = document.getElementById("menu");
-const tagLine = document.getElementById("tagLine");
-const how = document.getElementById("how")
-const graphicDesign = document.getElementById("graphicDesign")
-const getStarted1 = document.getElementById("getStarted1");
-const websiteDescription1= document.getElementById("websiteDescription1");
-const aligner1 = document.getElementById("aligner1");
+// const getStarted2 = document.getElementById("getStarted2");
+// const websiteDescription2 = document.getElementById("websiteDescription2");
+// const aligner2 = document.getElementById("aligner2");
+// const footer = document.getElementById('footer');
+// const numberList = document.getElementById("winningNumbers");
+// const winnerList = document.getElementById("winners");
+// const description = document.getElementById("description");
+// const carouselSize = document.getElementById("carousel");
+// const carouselBackground = document.getElementById("carouselBackground");
+// const menu = document.getElementById("menu");
+// const tagLine = document.getElementById("tagLine");
+// const how = document.getElementById("how")
+// const graphicDesign = document.getElementById("graphicDesign")
+// const getStarted1 = document.getElementById("getStarted1");
+// const websiteDescription1= document.getElementById("websiteDescription1");
+// const aligner1 = document.getElementById("aligner1");
 
 
-const section1 = document.getElementById("section1");
-const section2 = document.getElementById("section2");
-const section3 = document.getElementById("section3");
-const section4 = document.getElementById("section4");
+// const section1 = document.getElementById("section1");
+// const section2 = document.getElementById("section2");
+// const section3 = document.getElementById("section3");
+// const section4 = document.getElementById("section4");
 
 // const fontTimer = setInterval(sizeResponsive, 10);
 // let fontSize;
@@ -150,312 +150,101 @@ const section4 = document.getElementById("section4");
 // }
 
 /*The reason the carousel is moving*/
+let images = ["images/food1.jpg", "images/food2.jpg", "images/food3.jpg", "images/food4.jpg", "images/food5.jpg", "images/food6.jpg", "images/food7.jpg", "images/food8.jpg", "images/food9.jpg"]
 const timer = setInterval(carousel, 2000);
-let phase = 1
-
-let box1 = document.getElementById("box1");
-let box2 = document.getElementById("box2");
-let box3 = document.getElementById("box3");
-let box4 = document.getElementById("box4");
-let box5 = document.getElementById("box5");
-let box6 = document.getElementById("box6");
-let box7 = document.getElementById("box7");
-
-
-
-
+let var1 = 1,
+  var2 = 2,
+  var3 = 3,
+  var4 = 4,
+  var5 = 5,
+  imagesNum = 0;
+box = "box";
 
 function carousel() {
-  if (phase == 1) {
-    box1.style.width = "20%";
-    box1.style.left = "12.5%";
-    box1.style.top = "34%";
-    box1.style.borderRadius = "20%";
-    box1.style.zIndex = "3";
+  document.getElementById("box" + var1).style.width = "40%";
+  document.getElementById("box" + var1).style.height = "80%";
+  document.getElementById("box" + var1).style.left = "10%";
+  document.getElementById("box" + var1).style.top = "10%";
+  document.getElementById("box" + var1).style.zIndex = "3";
 
-    box2.style.width = "25%";
-    box2.style.left = "22.5%";
-    box2.style.top = "30%";
-    box2.style.borderRadius = "15%";
-    box2.style.zIndex = "4";
+  document.getElementById("box" + var2).style.width = "50%";
+  document.getElementById("box" + var2).style.height = "100%";
+  document.getElementById("box" + var2).style.left = "25%";
+  document.getElementById("box" + var2).style.top = "0%";
+  document.getElementById("box" + var2).style.zIndex = "4";
 
-    box3.style.width = "30%";
-    box3.style.left = "35%";
-    box3.style.top = "17.5%";
-    box3.style.borderRadius = "10%";
-    box3.style.zIndex = "5";
+  document.getElementById("box" + var3).style.width = "40%";
+  document.getElementById("box" + var3).style.height = "80%";
+  document.getElementById("box" + var3).style.left = "50%";
+  document.getElementById("box" + var3).style.top = "10%";
+  document.getElementById("box" + var3).style.zIndex = "3";
 
-    box4.style.width = "25%";
-    box4.style.left = "52.5%";
-    box4.style.top = "25%";
-    box4.style.borderRadius = "15%";
-    box4.style.zIndex = "4";
+  document.getElementById("box" + var4).style.width = "30%";
+  document.getElementById("box" + var4).style.height = "60%";
+  document.getElementById("box" + var4).style.left = "70%";
+  document.getElementById("box" + var4).style.top = "20%";
+  document.getElementById("box" + var4).style.zIndex = "2";
 
-    box5.style.width = "20%";
-    box5.style.left = "67.5%";
-    box5.style.top = "30.5%";
-    box5.style.borderRadius = "20%";
-    box5.style.zIndex = "3";
+  document.getElementById("box" + var5).style.width = "30%";
+  document.getElementById("box" + var5).style.height = "60%";
+  document.getElementById("box" + var5).style.left = "0%";
+  document.getElementById("box" + var5).style.top = "20%";
+  document.getElementById("box" + var5).style.zIndex = "1";
+  document.getElementById("box" + var5).style.backgroundImage = "url("+images[imagesNum]+")";
 
-    box6.style.width = "15%";
-    box6.style.left = "80%";
-    box6.style.top = "37%";
-    box6.style.borderRadius = "25%";
-    box6.style.zIndex = "2";
+  if (var1 == 1)
+    var1 = 6
+  if (var2 == 1)
+    var2 = 6
+  if (var3 == 1)
+    var3 = 6
+  if (var4 == 1)
+    var4 = 6
+  if (var5 == 1)
+    var5 = 6
+  if (imagesNum == 8)
+    imagesNum = 0
 
-    box7.style.width = "15%";
-    box7.style.left = "5%";
-    box7.style.top = "37%";
-    box7.style.borderRadius = "25%";
-    box7.style.zIndex = "1";
+  var1--
+  var2--
+  var3--
+  var4--
+  var5--
+  imagesNum++
 
-  } else if (phase == 2) {
-    box1.style.width = "25%";
-    box1.style.left = "22.5%";
-    box1.style.top = "25%";
-    box1.style.borderRadius = "15%";
-    box1.style.zIndex = "4";
+}
+const menu = document.getElementById("menu")
+const menuButton = document.getElementById("menuButton")
+var menuState = false;
 
-    box2.style.width = "30%";
-    box2.style.left = "35%";
-    box2.style.top = "17.5%";
-    box2.style.borderRadius = "10%";
-    box2.style.zIndex = "5";
+function menuAction() {
 
-    box3.style.width = "25%";
-    box3.style.left = "52.5%";
-    box3.style.top = "25%";
-    box3.style.borderRadius = "15%";
-    box3.style.zIndex = "4";
-
-    box4.style.width = "20%";
-    box4.style.left = "67.5%";
-    box4.style.top = "30.5%";
-    box4.style.borderRadius = "20%";
-    box4.style.zIndex = "3";
-
-    box5.style.width = "15%";
-    box5.style.left = "80%";
-    box5.style.top = "37%";
-    box5.style.borderRadius = "25%";
-    box5.style.zIndex = "2";
-
-    box6.style.width = "15%";
-    box6.style.left = "5%";
-    box6.style.top = "37%";
-    box6.style.borderRadius = "25%";
-    box6.style.zIndex = "1";
-
-    box7.style.width = "20%";
-    box7.style.left = "12.5%";
-    box7.style.top = "30.5%";
-    box7.style.borderRadius = "20%";
-    box7.style.zIndex = "3";
-
-  } else if (phase == 3) {
-    box1.style.width = "30%";
-    box1.style.left = "35%";
-    box1.style.top = "17.5%";
-    box1.style.borderRadius = "10%";
-    box1.style.zIndex = "5";
-
-    box2.style.width = "25%";
-    box2.style.left = "52.5%";
-    box2.style.top = "25%";
-    box2.style.borderRadius = "15%";
-    box2.style.zIndex = "4";
-
-    box3.style.width = "20%";
-    box3.style.left = "67.5%";
-    box3.style.top = "30.5%";
-    box3.style.borderRadius = "20%";
-    box3.style.zIndex = "3";
-
-    box4.style.width = "15%";
-    box4.style.left = "80%";
-    box4.style.top = "37%";
-    box4.style.borderRadius = "25%";
-    box4.style.zIndex = "2";
-
-    box5.style.width = "15%";
-    box5.style.left = "5%";
-    box5.style.top = "37%";
-    box5.style.borderRadius = "25%";
-    box5.style.zIndex = "1";
-
-    box6.style.width = "20%";
-    box6.style.left = "12.5%";
-    box6.style.top = "30.5%";
-    box6.style.borderRadius = "20%";
-    box6.style.zIndex = "3";
-
-    box7.style.width = "25%";
-    box7.style.left = "22.5%";
-    box7.style.top = "25%";
-    box7.style.borderRadius = "15%";
-    box7.style.zIndex = "4";
-
-  } else if (phase == 4) {
-    box1.style.width = "25%";
-    box1.style.left = "52.5%";
-    box1.style.top = "16.5%";
-    box1.style.borderRadius = "15%";
-    box1.style.zIndex = "4";
-    box2.style.width = "20%";
-    box2.style.left = "67.5%";
-    box2.style.top = "23%";
-    box2.style.borderRadius = "20%";
-    box2.style.zIndex = "3";
-    box3.style.width = "15%";
-    box3.style.left = "80%";
-    box3.style.top = "29.5%";
-    box3.style.borderRadius = "25%";
-    box3.style.zIndex = "2";
-    box4.style.width = "15%";
-    box4.style.left = "5%";
-    box4.style.top = "29.5%";
-    box4.style.borderRadius = "25%";
-    box4.style.zIndex = "1";
-    box5.style.width = "20%";
-    box5.style.left = "12.5%";
-    box5.style.top = "23%";
-    box5.style.borderRadius = "20%";
-    box5.style.zIndex = "3";
-    box6.style.width = "25%";
-    box6.style.left = "22.5%";
-    box6.style.top = "16.5%";
-    box6.style.borderRadius = "15%";
-    box6.style.zIndex = "4";
-    box7.style.width = "30%";
-    box7.style.left = "35%";
-    box7.style.top = "10%";
-    box7.style.borderRadius = "10%";
-    box7.style.zIndex = "5";
-  } else if (phase == 5) {
-    box1.style.width = "20%";
-    box1.style.left = "67.5%";
-    box1.style.top = "23%";
-    box1.style.borderRadius = "20%";
-    box1.style.zIndex = "3";
-    box2.style.width = "15%";
-    box2.style.left = "80%";
-    box2.style.top = "29.5%";
-    box2.style.borderRadius = "25%";
-    box2.style.zIndex = "2";
-    box3.style.width = "15%";
-    box3.style.left = "5%";
-    box3.style.top = "29.5%";
-    box3.style.borderRadius = "25%";
-    box3.style.zIndex = "1";
-    box4.style.width = "20%";
-    box4.style.left = "12.5%";
-    box4.style.top = "23%";
-    box4.style.borderRadius = "20%";
-    box4.style.zIndex = "3";
-    box5.style.width = "25%";
-    box5.style.left = "22.5%";
-    box5.style.top = "16.5%";
-    box5.style.borderRadius = "15%";
-    box5.style.zIndex = "4";
-    box6.style.width = "30%";
-    box6.style.left = "35%";
-    box6.style.top = "10%";
-    box6.style.borderRadius = "10%";
-    box6.style.zIndex = "5";
-    box7.style.width = "25%";
-    box7.style.left = "52.5%";
-    box7.style.top = "16.5%";
-    box7.style.borderRadius = "15%";
-    box7.style.zIndex = "4";
-  } else if (phase == 6) {
-    box1.style.width = "15%";
-    box1.style.left = "80%";
-    box1.style.top = "29.5%";
-    box1.style.borderRadius = "25%";
-    box1.style.zIndex = "2";
-    box2.style.width = "15%";
-    box2.style.left = "5%";
-    box2.style.top = "29.5%";
-    box2.style.borderRadius = "25%";
-    box2.style.zIndex = "1";
-    box3.style.width = "20%";
-    box3.style.left = "12.5%";
-    box3.style.top = "23%";
-    box3.style.borderRadius = "20%";
-    box3.style.zIndex = "3";
-    box4.style.width = "25%";
-    box4.style.left = "22.5%";
-    box4.style.top = "16.5%";
-    box4.style.borderRadius = "15%";
-    box4.style.zIndex = "4";
-    box5.style.width = "30%";
-    box5.style.left = "35%";
-    box5.style.top = "10%";
-    box5.style.borderRadius = "10%";
-    box5.style.zIndex = "5";
-    box6.style.width = "25%";
-    box6.style.left = "52.5%";
-    box6.style.top = "16.5%";
-    box6.style.borderRadius = "15%";
-    box6.style.zIndex = "4";
-    box7.style.width = "20%";
-    box7.style.left = "67.5%";
-    box7.style.top = "23%";
-    box7.style.borderRadius = "20%";
-    box7.style.zIndex = "3";
-  } else if (phase == 7) {
-    box1.style.width = "15%";
-    box1.style.left = "5%";
-    box1.style.top = "29.5%";
-    box1.style.borderRadius = "25%";
-    box1.style.zIndex = "1";
-    box2.style.width = "20%";
-    box2.style.left = "12.5%";
-    box2.style.top = "23%";
-    box2.style.borderRadius = "20%";
-    box2.style.zIndex = "3";
-    box3.style.width = "25%";
-    box3.style.left = "22.5%";
-    box3.style.top = "16.5%";
-    box3.style.borderRadius = "15%";
-    box3.style.zIndex = "4";
-    box4.style.width = "30%";
-    box4.style.left = "35%";
-    box4.style.top = "10%";
-    box4.style.borderRadius = "10%";
-    box4.style.zIndex = "5";
-    box5.style.width = "25%";
-    box5.style.left = "52.5%";
-    box5.style.top = "16.5%";
-    box5.style.borderRadius = "15%";
-    box5.style.zIndex = "4";
-    box6.style.width = "20%";
-    box6.style.left = "67.5%";
-    box6.style.top = "23%";
-    box6.style.borderRadius = "20%";
-    box6.style.zIndex = "3";
-    box7.style.width = "15%";
-    box7.style.left = "80%";
-    box7.style.top = "29.5%";
-    box7.style.borderRadius = "25%";
-    box7.style.zIndex = "2";
+  if (menuState) {
+    menuButton.innerHTML = "≡"
+    menuButton.style.rotate = "360deg";
+    menuButton.style.top = "1%"
+    menu.style.top = "-10%"
+    menuState = false
+  } else {
+    menuButton.innerHTML = "x"
+    menuButton.style.rotate = "180deg";
+    menuButton.style.top = "6%"
+    menu.style.top = "0%"
+    menuState = true
   }
-
-  phase++
-  if (phase == 8)
-    phase = 1
 }
+console.log(menuButton.innerHTML)
 
-let winners = ["Rad", "Dave", "Diana", "May"];
-let winnerNumbers = ["1", "2", "3", "4"];
+// let winners = ["Rad", "Dave", "Diana", "May"];
+// let winnerNumbers = ["1", "2", "3", "4"];
 
-for (i = 0; i < winners.length; ++i) {
-  var li = document.createElement("li");
-  li.innerText = winners[i];
-  winnerList.appendChild(li);
-}
-for (i = 0; i < winnerNumbers.length; ++i) {
-  var li = document.createElement("li");
-  li.innerText = winnerNumbers[i];
-  numberList.appendChild(li);
-}
+// for (i = 0; i < winners.length; ++i) {
+//   var li = document.createElement("li");
+//   li.innerText = winners[i];
+//   winnerList.appendChild(li);
+// }
+// for (i = 0; i < winnerNumbers.length; ++i) {
+//   var li = document.createElement("li");
+//   li.innerText = winnerNumbers[i];
+//   numberList.appendChild(li);
+// }
