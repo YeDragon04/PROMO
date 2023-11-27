@@ -42,7 +42,7 @@ body {
     border-radius: 2rem;
 }
 
-.logInContainer {
+.sign_Up_Container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -94,7 +94,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-    .logInContainer {
+    .sign_Up_Container {
         flex-wrap: wrap;
     }
 
